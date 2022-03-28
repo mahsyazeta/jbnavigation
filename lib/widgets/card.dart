@@ -17,11 +17,7 @@ class card extends StatelessWidget {
         margin: EdgeInsets.all(8),
         child: Row(
           children: [
-            Expanded(child: Text(item.name)),
-            Expanded(child: Text(
-              item.weight.toString(),
-             ),
-            ),
+            Expanded(child: Text(item.name+' '+item.weight.toString()+'g')),
             Expanded(child: Text(
               item.price.toString(),
               textAlign: TextAlign.end,

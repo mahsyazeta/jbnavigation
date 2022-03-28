@@ -10,7 +10,7 @@ class ItemPage extends StatelessWidget {
       body: Container(
         alignment: Alignment.center,
         child: Text(
-          itemArgs.name + ' \n ' + itemArgs.weight.toString() +' \n ' + itemArgs.price.toString(),
+          itemArgs.name + ' \n ' + itemArgs.weight.toString() +'g'+' \n ' + itemArgs.price.toString(),
           textAlign: TextAlign.center,
         )
       ),
