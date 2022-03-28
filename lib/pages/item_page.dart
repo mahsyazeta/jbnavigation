@@ -8,9 +8,9 @@ class ItemPage extends StatelessWidget {
     final Item itemArgs = ModalRoute.of(context)?.settings.arguments as Item;
     return Scaffold(
       body: Container(
-      
+        alignment: Alignment.center,
         child: Text(
-          itemArgs.name + ' with ' + itemArgs.price.toString(),
+          itemArgs.name + ' \n ' + itemArgs.weight.toString() +' \n ' + itemArgs.price.toString(),
           textAlign: TextAlign.center,
         )
       ),
